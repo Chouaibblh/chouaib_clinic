@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Medicio — Book Appointment</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="assets/img/logo.png" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Medicio</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html" class="active btn">Appointment</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Book an Appointment</h1>
+      <p>Select a doctor, date, and time that works best for you. We’ll send a confirmation to your email.</p>
+
+      <form id="appointment-form" class="card" novalidate>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label>
+            Full Name <span class="required">*</span>
+            <input type="text" name="name" required>
+            <span class="error"></span>
+          </label>
+          <label>
+            Email <span class="required">*</span>
+            <input type="email" name="email" required>
+            <span class="error"></span>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone">
+            <span class="error"></span>
+          </label>
+          <label>
+            Requested Service <span class="required">*</span>
+            <select name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Family Medicine">Family Medicine</option>
+              <option value="Internal Medicine">Internal Medicine</option>
+              <option value="Pediatrics">Pediatrics</option>
+              <option value="Special Consultation">Special Consultation</option>
+            </select>
+            <span class="error"></span>
+          </label>
+          <label>
+            Preferred Doctor <span class="required">*</span>
+            <select name="doctor" required>
+              <option value="" disabled selected>Select a doctor</option>
+            </select>
+            <span class="error"></span>
+          </label>
+          <label>
+            Birthdate <span class="required">*</span>
+            <input type="date" name="birthdate" required>
+            <span id="age-display" style="display: block; font-size: 14px; color: var(--gray-600);"></span>
+            <span class="error"></span>
+          </label>
+          <label>
+            Date <span class="required">*</span>
+            <input type="date" name="date" required>
+            <span class="error"></span>
+          </label>
+          <label>
+            Preferred Time <span class="required">*</span>
+            <select name="time" required>
+              <option value="" disabled selected>Choose time</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+            </select>
+            <span class="error"></span>
+          </label>
+          <label id="time-slot-label" style="display: none;">
+            Preferred Time Slot (custom) <span class="required">*</span>
+            <input type="text" name="time_slot" placeholder="e.g., 9-10 AM">
+            <span class="error"></span>
+          </label>
+        </div>
+
+        <label style="margin-top: 16px;">
+          Reason for visit (optional)
+          <textarea name="reason" rows="4" placeholder="Briefly describe symptoms or reason..."></textarea>
+        </label>
+
+        <button type="submit" class="btn" style="margin-top: 20px; background:linear-gradient(135deg,var(--primary),var(--primary-light));">
+          Book Appointment
+        </button>
+      </form>
+
+      <div id="appointment-success" style="display:none; margin-top:24px; padding:20px; background:var(--bg-glass); border-radius:12px; text-align:center;">
+        <h3>Thank you!</h3>
+        <p>Your appointment request has been received. We will confirm it shortly via email.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Medicio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

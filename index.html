@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Medicio — Home</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="assets/img/logo.png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Chouaib Clinic</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html" class="btn">Appointment</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1>Compassionate care. Modern medicine.</h1>
+        <p>Medicio provides patient-centered healthcare with a focus on clarity, comfort, and clinical excellence.</p>
+        <div class="hero-cta">
+          <a class="btn" href="services.html">Our Services</a>
+          <a class="btn ghost" href="appointment.html">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Carousel Section -->
+    <section class="carousel-section container my-5">
+      <div id="clinicCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#clinicCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#clinicCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#clinicCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/clinic1.jpg" class="d-block w-100" alt="Clinic Exterior" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Our Modern Clinic</h5>
+              <p>State-of-the-art facilities for your care.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/clinic2.jpg" class="d-block w-100" alt="Doctors Team" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Expert Doctors</h5>
+              <p>Board-certified professionals ready to help.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/clinic3.jpg" class="d-block w-100" alt="Facilities" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Advanced Facilities</h5>
+              <p>Equipped with the latest diagnostic tools.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clinicCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clinicCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2 class="section-title">What we offer</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Primary Care</h3>
+          <p>Comprehensive routine and preventive services to keep you healthy.</p>
+        </article>
+        <article class="card">
+          <h3>Diagnostics</h3>
+          <p>Fast, accurate imaging and lab services with secure results delivery.</p>
+        </article>
+        <article class="card">
+          <h3>Telehealth</h3>
+          <p>Virtual consultations for follow-ups, triage and medication management.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Medicio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
